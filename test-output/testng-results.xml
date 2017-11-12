@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="1" failed="0" ignored="0" total="5" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="97317" started-at="2017-11-11T07:29:18Z" finished-at="2017-11-11T07:30:55Z">
+    <groups>
+    </groups>
+    <test name="FirefoxTest" duration-ms="947" started-at="2017-11-11T07:29:18Z" finished-at="2017-11-11T07:29:19Z">
+      <class name="extent.GridDemo">
+        <test-method status="FAIL" signature="launchapp(java.lang.String)[pri:0, instance:extent.GridDemo@5e5792a0]" name="launchapp" is-config="true" duration-ms="888" started-at="2017-11-11T12:59:18Z" finished-at="2017-11-11T12:59:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[Unable to parse remote response: <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="/assets/displayhelpservlet.css" media="all"/>
+  <link href="/assets/favicon.ico" rel="icon" type="image/x-icon" />
+  <script src="/assets/jquery-3.1.1.min.js" type="text/javascript"></script>
+  <script src="/assets/displayhelpservlet.js" type="text/javascript"></script>
+  <script type="text/javascript">
+    var json = Object.freeze('{"version":"3.7.1","type":"Grid Hub","consoleLink":"/grid/console"}');
+  </script>
+</head>
+<body>
+
+<div id="content">
+  <div id="help-heading">
+    <h1><span id="logo"></span></h1>
+    <h2>Selenium <span class="se-type"></span>&nbsp;v.<span class="se-version"></span></h2>
+  </div>
+
+  <div id="content-body">
+    <p>
+      Whoops! The URL specified routes to this help page.
+    </p>
+    <p>
+      For more information about Selenium <span class="se-type"></span> please see the
+      <a class="se-docs">docs</a> and/or visit the <a class="se-wiki">wiki</a>.
+      <span id="console-item">
+        Or perhaps you are looking for the Selenium <span class="se-type"></span> <a class="se-console">console</a>.
+      </span>
+    </p>
+    <p>
+      Happy Testing!
+    </p>
+  </div>
+
+  <div>
+    <footer id="help-footer">
+      Selenium is made possible through the efforts of our open source community, contributions from
+      these <a href="https://github.com/SeleniumHQ/selenium/blob/master/AUTHORS">people</a>, and our
+      <a href="http://www.seleniumhq.org/sponsors/">sponsors</a>.
+   </footer>
+  </div>
+ </div>
+
+</body>
+</html>
+Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
+System info: host: 'ICEN041-E5470', ip: '192.168.0.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
+Driver info: driver.version: RemoteWebDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: Unable to parse remote response: <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="/assets/displayhelpservlet.css" media="all"/>
+  <link href="/assets/favicon.ico" rel="icon" type="image/x-icon" />
+  <script src="/assets/jquery-3.1.1.min.js" type="text/javascript"></script>
+  <script src="/assets/displayhelpservlet.js" type="text/javascript"></script>
+  <script type="text/javascript">
+    var json = Object.freeze('{"version":"3.7.1","type":"Grid Hub","consoleLink":"/grid/console"}');
+  </script>
+</head>
+<body>
+
+<div id="content">
+  <div id="help-heading">
+    <h1><span id="logo"></span></h1>
+    <h2>Selenium <span class="se-type"></span>&nbsp;v.<span class="se-version"></span></h2>
+  </div>
+
+  <div id="content-body">
+    <p>
+      Whoops! The URL specified routes to this help page.
+    </p>
+    <p>
+      For more information about Selenium <span class="se-type"></span> please see the
+      <a class="se-docs">docs</a> and/or visit the <a class="se-wiki">wiki</a>.
+      <span id="console-item">
+        Or perhaps you are looking for the Selenium <span class="se-type"></span> <a class="se-console">console</a>.
+      </span>
+    </p>
+    <p>
+      Happy Testing!
+    </p>
+  </div>
+
+  <div>
+    <footer id="help-footer">
+      Selenium is made possible through the efforts of our open source community, contributions from
+      these <a href="https://github.com/SeleniumHQ/selenium/blob/master/AUTHORS">people</a>, and our
+      <a href="http://www.seleniumhq.org/sponsors/">sponsors</a>.
+   </footer>
+  </div>
+ </div>
+
+</body>
+</html>
+Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
+System info: host: 'ICEN041-E5470', ip: '192.168.0.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:347)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:136)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:217)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:140)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:153)
+	at extent.GridDemo.launchapp(GridDemo.java:31)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:146)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:626)
+	at org.testng.TestRunner.run(TestRunner.java:594)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:414)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchapp -->
+        <test-method status="SKIP" signature="calculatepercent()[pri:0, instance:extent.GridDemo@5e5792a0]" name="calculatepercent" duration-ms="0" started-at="2017-11-11T12:59:19Z" finished-at="2017-11-11T12:59:19Z">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[Unable to parse remote response: <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="/assets/displayhelpservlet.css" media="all"/>
+  <link href="/assets/favicon.ico" rel="icon" type="image/x-icon" />
+  <script src="/assets/jquery-3.1.1.min.js" type="text/javascript"></script>
+  <script src="/assets/displayhelpservlet.js" type="text/javascript"></script>
+  <script type="text/javascript">
+    var json = Object.freeze('{"version":"3.7.1","type":"Grid Hub","consoleLink":"/grid/console"}');
+  </script>
+</head>
+<body>
+
+<div id="content">
+  <div id="help-heading">
+    <h1><span id="logo"></span></h1>
+    <h2>Selenium <span class="se-type"></span>&nbsp;v.<span class="se-version"></span></h2>
+  </div>
+
+  <div id="content-body">
+    <p>
+      Whoops! The URL specified routes to this help page.
+    </p>
+    <p>
+      For more information about Selenium <span class="se-type"></span> please see the
+      <a class="se-docs">docs</a> and/or visit the <a class="se-wiki">wiki</a>.
+      <span id="console-item">
+        Or perhaps you are looking for the Selenium <span class="se-type"></span> <a class="se-console">console</a>.
+      </span>
+    </p>
+    <p>
+      Happy Testing!
+    </p>
+  </div>
+
+  <div>
+    <footer id="help-footer">
+      Selenium is made possible through the efforts of our open source community, contributions from
+      these <a href="https://github.com/SeleniumHQ/selenium/blob/master/AUTHORS">people</a>, and our
+      <a href="http://www.seleniumhq.org/sponsors/">sponsors</a>.
+   </footer>
+  </div>
+ </div>
+
+</body>
+</html>
+Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
+System info: host: 'ICEN041-E5470', ip: '192.168.0.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
+Driver info: driver.version: RemoteWebDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: Unable to parse remote response: <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="/assets/displayhelpservlet.css" media="all"/>
+  <link href="/assets/favicon.ico" rel="icon" type="image/x-icon" />
+  <script src="/assets/jquery-3.1.1.min.js" type="text/javascript"></script>
+  <script src="/assets/displayhelpservlet.js" type="text/javascript"></script>
+  <script type="text/javascript">
+    var json = Object.freeze('{"version":"3.7.1","type":"Grid Hub","consoleLink":"/grid/console"}');
+  </script>
+</head>
+<body>
+
+<div id="content">
+  <div id="help-heading">
+    <h1><span id="logo"></span></h1>
+    <h2>Selenium <span class="se-type"></span>&nbsp;v.<span class="se-version"></span></h2>
+  </div>
+
+  <div id="content-body">
+    <p>
+      Whoops! The URL specified routes to this help page.
+    </p>
+    <p>
+      For more information about Selenium <span class="se-type"></span> please see the
+      <a class="se-docs">docs</a> and/or visit the <a class="se-wiki">wiki</a>.
+      <span id="console-item">
+        Or perhaps you are looking for the Selenium <span class="se-type"></span> <a class="se-console">console</a>.
+      </span>
+    </p>
+    <p>
+      Happy Testing!
+    </p>
+  </div>
+
+  <div>
+    <footer id="help-footer">
+      Selenium is made possible through the efforts of our open source community, contributions from
+      these <a href="https://github.com/SeleniumHQ/selenium/blob/master/AUTHORS">people</a>, and our
+      <a href="http://www.seleniumhq.org/sponsors/">sponsors</a>.
+   </footer>
+  </div>
+ </div>
+
+</body>
+</html>
+Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
+System info: host: 'ICEN041-E5470', ip: '192.168.0.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:347)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:136)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:217)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:140)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:153)
+	at extent.GridDemo.launchapp(GridDemo.java:31)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:146)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:626)
+	at org.testng.TestRunner.run(TestRunner.java:594)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:414)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- calculatepercent -->
+        <test-method status="SKIP" signature="closeBrowser()[pri:0, instance:extent.GridDemo@5e5792a0]" name="closeBrowser" is-config="true" duration-ms="0" started-at="2017-11-11T12:59:19Z" finished-at="2017-11-11T12:59:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- extent.GridDemo -->
+    </test> <!-- FirefoxTest -->
+    <test name="ChromeTest2" duration-ms="72591" started-at="2017-11-11T07:29:18Z" finished-at="2017-11-11T07:30:31Z">
+      <class name="extent.GridDemo">
+        <test-method status="PASS" signature="launchapp(java.lang.String)[pri:0, instance:extent.GridDemo@13deb50e]" name="launchapp" is-config="true" duration-ms="22383" started-at="2017-11-11T12:59:18Z" finished-at="2017-11-11T12:59:40Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchapp -->
+        <test-method status="PASS" signature="calculatepercent()[pri:0, instance:extent.GridDemo@13deb50e]" name="calculatepercent" duration-ms="50004" started-at="2017-11-11T12:59:40Z" finished-at="2017-11-11T13:00:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- calculatepercent -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:extent.GridDemo@13deb50e]" name="closeBrowser" is-config="true" duration-ms="193" started-at="2017-11-11T13:00:30Z" finished-at="2017-11-11T13:00:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- extent.GridDemo -->
+    </test> <!-- ChromeTest2 -->
+    <test name="ChromeTest3" duration-ms="94987" started-at="2017-11-11T07:29:18Z" finished-at="2017-11-11T07:30:53Z">
+      <class name="extent.GridDemo">
+        <test-method status="PASS" signature="launchapp(java.lang.String)[pri:0, instance:extent.GridDemo@14bf9759]" name="launchapp" is-config="true" duration-ms="44801" started-at="2017-11-11T12:59:18Z" finished-at="2017-11-11T13:00:03Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchapp -->
+        <test-method status="PASS" signature="calculatepercent()[pri:0, instance:extent.GridDemo@14bf9759]" name="calculatepercent" duration-ms="50008" started-at="2017-11-11T13:00:03Z" finished-at="2017-11-11T13:00:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- calculatepercent -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:extent.GridDemo@14bf9759]" name="closeBrowser" is-config="true" duration-ms="170" started-at="2017-11-11T13:00:53Z" finished-at="2017-11-11T13:00:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- extent.GridDemo -->
+    </test> <!-- ChromeTest3 -->
+    <test name="ChromeTest" duration-ms="95232" started-at="2017-11-11T07:29:18Z" finished-at="2017-11-11T07:30:53Z">
+      <class name="extent.GridDemo">
+        <test-method status="PASS" signature="launchapp(java.lang.String)[pri:0, instance:extent.GridDemo@53b32d7]" name="launchapp" is-config="true" duration-ms="44924" started-at="2017-11-11T12:59:18Z" finished-at="2017-11-11T13:00:03Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchapp -->
+        <test-method status="PASS" signature="calculatepercent()[pri:0, instance:extent.GridDemo@53b32d7]" name="calculatepercent" duration-ms="50003" started-at="2017-11-11T13:00:03Z" finished-at="2017-11-11T13:00:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- calculatepercent -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:extent.GridDemo@53b32d7]" name="closeBrowser" is-config="true" duration-ms="298" started-at="2017-11-11T13:00:53Z" finished-at="2017-11-11T13:00:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- extent.GridDemo -->
+    </test> <!-- ChromeTest -->
+    <test name="ChromeTest1" duration-ms="97317" started-at="2017-11-11T07:29:18Z" finished-at="2017-11-11T07:30:55Z">
+      <class name="extent.GridDemo">
+        <test-method status="PASS" signature="launchapp(java.lang.String)[pri:0, instance:extent.GridDemo@e25b2fe]" name="launchapp" is-config="true" duration-ms="47164" started-at="2017-11-11T12:59:18Z" finished-at="2017-11-11T13:00:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchapp -->
+        <test-method status="PASS" signature="calculatepercent()[pri:0, instance:extent.GridDemo@e25b2fe]" name="calculatepercent" duration-ms="50002" started-at="2017-11-11T13:00:05Z" finished-at="2017-11-11T13:00:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- calculatepercent -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:extent.GridDemo@e25b2fe]" name="closeBrowser" is-config="true" duration-ms="142" started-at="2017-11-11T13:00:55Z" finished-at="2017-11-11T13:00:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- extent.GridDemo -->
+    </test> <!-- ChromeTest1 -->
+  </suite> <!-- Suite -->
+</testng-results>
